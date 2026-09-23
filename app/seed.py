@@ -32,7 +32,7 @@ TUTORS = [
     {
         "name": "Kavya Nair",
         "email": "kavya@e.ntu.edu.sg",
-        "modules": ["SC1015 Intro to Data Science & AI", "SC2001 Algorithms"],
+        "modules": ["SC1015 Intro to Data Science", "SC2001 Algorithms"],
         "grade_band": "A-",
         "rating": 4.6,
         "sessions_done": 8,

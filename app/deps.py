@@ -14,7 +14,7 @@ def get_current_account(
     db: Session = Depends(get_db),
 ) -> Account:
     if not creds:
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Log in first, then paste the token")
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Unauthorized")
     subject = decode_access_token(creds.credentials)
     if not subject:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid or expired session")
